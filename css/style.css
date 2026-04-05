@@ -1,0 +1,56 @@
+.game {
+    background-color: #1c1c1c;
+    font-family: 'Arial', sans-serif;
+}
+
+canvas {
+    display: block;
+    margin: 0 auto;
+    background: #000;
+    border: 2px solid #fff;
+}
+
+.hud {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.hud .health,
+.hud .score {
+    margin: 5px 0;
+}
+
+.shop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.shop button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+    .hud {
+        font-size: 16px;
+    }
+    .shop {
+        width: 90%;
+    }
+}
